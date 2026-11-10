@@ -53,14 +53,12 @@ Bodega.forEach(item => {
         claseColor = "No_Aprobado";
     }
 
-    Caja1.innerHTML += `
-    
-    <div class = "Caja_Producto">
-        <h2>$(item.Nombre)</h2>
-        <p>Presio: $$(item.Precio)</p>
-        <p>Stock: $(item.Stock)</p>
+    Caja.innerHTML += `
+    <div class="Caja_Producto ${claseColor}">
+        <h2>${item.Nombre}</h2>
+        <p>Precio: $${item.Precio}</p>
+        <p>Cantidad: ${item.Stock}</p>
     </div>
-
     `;
 })
 
