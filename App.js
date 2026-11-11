@@ -36,10 +36,10 @@ if(Presupuesto>=1200){
 
 const Bodega = [
     {Nombre: "Producto1", Precio: 100, Stock: 3},
-    {Nombre: "Producto2", Precio: 100, Stock: 3},
+    {Nombre: "Producto2", Precio: 100, Stock: 0},
     {Nombre: "Producto3", Precio: 100, Stock: 3},
     {Nombre: "Producto4", Precio: 100, Stock: 3},
-    {Nombre: "Producto5", Precio: 100, Stock: 3}
+    {Nombre: "Producto5", Precio: 100, Stock: 0}
 ]
 
 let Caja = document.querySelector(".Caja_Vasia");
@@ -50,7 +50,7 @@ Bodega.forEach(item => {
     if(item.Stock>0){
         claseColor = "Aprobado";
     }else{
-        claseColor = "No_Aprobado";
+        claseColor = "No_aprobado";
     }
 
     Caja.innerHTML += `
